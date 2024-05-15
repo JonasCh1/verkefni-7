@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <title>Ljosmyndakeppni 2024 | Spurningakeppni</title>
+</head>
+<body>
+    <header class="topcol"  id="efst">
+        <div class="menu">
+            <input type="checkbox" id="check" class="input">
+            <label class="label" for="check">&#9776</label>
+            <nav>
+                <div class="list">
+                    <a href="upplysingar.html" target=""><span class="icon-book"></span> Upplýsingar</a>
+                    <a href="skraning.html" target=""><span class="icon-pencil"></span> Skráning</a>
+                    <a href="spurningakeppni.html" target="">? Spurningakeppni</a>
+                </div>
+            </nav>
+        </div>
+        <a href="index.html">
+            <picture>
+                <source class="logo" media="(min-width: 900px)" srcset="images/Logo-large.png">
+                <source class="logo" media="(min-width: 480px)" srcset="images/Logo-small.png">
+                <img class="logo" src="images/Logo-small.png" alt="IfItDoesntMatchAnyMedia">
+            </picture>
+        </a>    
+    </header>
+    <main>
+        <h1>Spurningakeppni</h1>
+        <br>
+        <form method="post">
+            <div class="form_col2">
+                <section>
+                    <label>1. Hver bjó til fyrstu árangursríku myndavélina sem notaði 35mm filmu?</label>
+                    <br>
+                    <input type="checkbox" name="val2"> <span>Kodak</span>
+                    <br>
+                    <input type="checkbox" name="val2"> <span>Agfa</span>
+                    <br>
+                    <input type="checkbox" name="val2"> <span>Leica</span>
+                    <br>
+                    <input type="checkbox" name="val2"> <span>Sony</span>
+                    <br>
+                </section>
+                <section>
+                    <label>2. Hvenær kom fyrsta myndavélin úr A seríunni frá Sony út?</label>
+                    <br>
+                    <input type="checkbox" name="val2"> <span>2002</span>
+                    <br>
+                    <input type="checkbox" name="val2"> <span>2008</span>
+                    <br>
+                    <input type="checkbox" name="val2"> <span>2006</span>
+                    <br>
+                    <input type="checkbox" name="val2"> <span>1999</span>
+                    <br>
+                </section>
+                <section>
+                    <label>3. Hvað stendur skammstöfunnin FPS fyrir?</label>
+                    <br>
+                    <input type="checkbox" name="val2"> <span>Fractions per second</span>
+                    <br>
+                    <input type="checkbox" name="val2"> <span>F-stops per sections</span>
+                    <br>
+                    <input type="checkbox" name="val2"> <span>Food per sack </span>
+                    <br>
+                    <input type="checkbox" name="val2"> <span>Frames per second</span>
+                    <br>
+                </section>
+                <section>
+                    <label>4. Hvenær var elsta myndin sem er enn til tekin?</label>
+                    <br>
+                    <input type="checkbox" name="val2"> <span>1826</span>
+                    <br>
+                    <input type="checkbox" name="val2"> <span>1853</span>
+                    <br>
+                    <input type="checkbox" name="val2"> <span>1794</span>
+                    <br>
+                    <input type="checkbox" name="val2"> <span>1911</span>
+                    <br>
+                </section>
+            </div>
+            <input type="submit" value="Senda inn">
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <td>Sæti</td>
+                    <td>Vinningur</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Sæti:">1st</td>
+                    <td data-label="Vinningur:">Myndavélataska</td>
+                </tr>
+                <tr>
+                    <td data-label="Sæti:">2nd</td>
+                    <td data-label="Vinningur:">64gb sd kort</td>
+                </tr>
+                <tr>
+                    <td data-label="Sæti:">3rd</td>
+                    <td data-label="Vinningur:">Camera cleaning kit</td>
+                </tr>
+            </tbody>
+        </table>
+        <section id="popupoverlay" class="overlay">
+            <div class="popupwindow">
+                <h2>Skráning tókst</h2>
+                <a href="" class="windowx">&times;</a>
+            </div>
+        </section>
+        <label for="smella" class="popupmenulbl"><span class="icon-pencil"></span></label>
+        <input type="checkbox" id="smella">
+        <div class="popupmenu">
+            <h4>Skráning</h4>
+            <p>Þú færð nýjustu fréttir um viðburði okkar í tölvupósti.</p>
+            <form class="popupform">
+                <input type="text" placeholder="Nafn">
+                <br>
+                <input type="email" placeholder="Email">
+                <br>
+                <input type="checkbox">
+                <label>Fá tölvupóst um nýjustu viðburði.</label>
+                <br>
+                <input type="checkbox">
+                <label>Fá tölvupóst um afslætti hjá Reykjavík Foto.</label>
+                <br>
+                <br>
+                <a href="#popupoverlay"><span class="skrabutton">Skrá</span></a>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <h1 class="title">Samstarfsaðillar</h1>
+        <section class="col2">
+            <img  class="sponsor" src="images/Ljosmyndasafn.png">
+            <img class="sponsor" src="images/ReykjavikPhoto.png">
+            <div>
+                <h2 class="footertext">Upplýsingar:</h2>
+                <h2 class="footertext">Ljósmyndakeppni 2024</h2>
+                <h2 class="footertext">Ljoskepp@gmail.com</h2>
+                <h2 class="footertext">354-6542345</h2>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
