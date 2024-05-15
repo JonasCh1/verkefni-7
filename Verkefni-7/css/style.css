@@ -1,0 +1,265 @@
+:root{
+    --color-1: #666666;
+    --color-2: #b3b3b3;
+}
+
+main{
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 1em;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Grid */
+.col3{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+}
+
+.col2{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+}
+
+.insidegrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 1em;
+    padding-top: 0em;
+}
+
+.topcol{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+/* Navigation */
+nav{
+    display: none;
+}
+
+input:checked ~ nav{
+    display: grid;
+    background: var(--nc-bg-3);
+}
+
+header input{
+    display: none;
+}
+
+.list a{
+    border-bottom: 1px solid var(--nc-bg-2);
+    border-radius: 10px;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 18px;
+    color: var(--nc-tx-1);
+    font-weight: 600;
+}
+
+.mainphoto{
+    padding: 1em;
+    padding-bottom: 0em;
+}
+
+.logo{
+    display: block; 
+    margin-left: auto;
+}
+
+.label{
+    font-size: xx-large;
+    color: var(--nc-tx-1);
+}
+
+.middle{
+    text-align: center;
+}
+
+.takki{
+    font-weight: 300;
+    display: block;
+    margin: 0 auto;
+    font-size: 2em;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--color-1);
+    border-radius: 25px;
+    color: white;
+    padding: 0.25em;
+    width: 230px;
+}
+
+.title{
+    text-align: center;
+    font-weight: 700;
+    color: white;
+}
+
+.fyrirsogn{
+    font-weight: 900;
+}
+
+.sponsor{
+    width: 400px;
+}
+
+.footertext{
+    font-weight: 300;
+    color: white;
+}
+
+.upplimg{
+    margin: 0 auto;
+}
+
+/* Form */
+
+form{
+    border: solid 1px;
+    border-radius: 1%;
+    border-color: var(--nc-bg-3);
+    padding: 1em;
+}
+
+textarea{
+    width: 100%;
+    height: 100px;
+    max-width: 100%;
+}
+
+.form_col2{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+thead{
+    font-weight: 600;
+}
+
+@media screen and (max-width: 520px) {
+    td{
+        display: block;
+        text-align: right;
+    }
+
+    thead{
+        display: none;
+    }
+
+    td::before{
+        content: attr(data-label);
+        float: left;
+        font-weight: var(--weight-2);
+    }
+}
+
+/* Media */
+@media screen and (min-width: 900px){
+    /* Grid  media*/
+    .col3{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+        padding: 2em;
+    }
+
+    .col2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2em;
+    }
+
+    .insidegrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        padding: 1em;
+        padding-top: 0em;
+    }
+
+    .topcol{
+        display: grid;
+        grid-template-columns: 1fr 0.75fr;
+    }
+
+    /* Dropdown media */
+    header label{
+        display: none;
+    }
+
+    nav{
+        display: block;
+    }
+
+    header input:checked ~ nav{
+        display: grid;
+        background: none;
+        border-radius: none;
+    }
+
+    .list{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .list a{
+        border-bottom: none;
+    }
+    
+    .logo {
+        size: auto;
+        display: block;
+        margin-left: auto;
+    }
+
+    .form_col2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+header {
+    background: none;
+    background-color: var(--nc-bg-2);
+    margin: -2rem calc(70% - 70vw) 0rem;
+	padding-top: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 1rem;
+}
+
+footer {
+    background: var(--color-1);
+	border-top: 1px solid var(--nc-bg-3);
+	padding: 2rem 1.5rem;
+    padding-left: calc(70vw - 70%);
+	padding-right: calc(70vw - 70%);
+}
+
+/* Text styling */
+h1, h2, h3, h4, p, a, label, span{
+    border-bottom: 0;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+a:hover{
+    color: rgb(178, 178, 178);
+}
